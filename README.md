@@ -1,2 +1,2 @@
 # cecilia_arts
-cecilia-arts.net next generation website
+cecilia-arts.net 2.0 next generation website
