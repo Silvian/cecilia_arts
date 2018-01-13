@@ -1,3 +1,9 @@
+"""webapp views"""
+
 from django.shortcuts import render
 
-# Create your views here.
+
+def index_view(request):
+    """Render index view."""
+    return render(request, "webapp/index.html")
+

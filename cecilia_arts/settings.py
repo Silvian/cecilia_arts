@@ -25,7 +25,12 @@ SECRET_KEY = 'ow9dbahv33xwaw0q6-d-i6(un$7#)pok4m3a=_xe^%hyje5e#2'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+# SECURITY WARNING: ensure the below settings are turned on when running with SSL/TLS active
+SECURE_SSL_REDIRECT = False
+SESSION_COOKIE_SECURE = False
+CSRF_COOKIE_SECURE = False
+
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -57,7 +62,9 @@ ROOT_URLCONF = 'cecilia_arts.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            BASE_DIR + '/webapp/templates'
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
