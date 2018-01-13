@@ -114,3 +114,5 @@ db.*
 # Ignore anything in static/admin
 static/admin/
 
+# Ignore the local_settings.py
+cecilia_arts/local_settings.py
