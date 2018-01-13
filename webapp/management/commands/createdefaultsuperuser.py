@@ -9,4 +9,5 @@ class Command(BaseCommand):
 
     def handle(self, *args, **options):
         """Create default super user."""
-        User.objects.create_superuser('root', 'root@admin.com', 'root')
+        if not User.objects.get(username='root'):
+            User.objects.create_superuser('root', 'root@admin.com', 'root')
