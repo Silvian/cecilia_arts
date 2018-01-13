@@ -1,0 +1,472 @@
+@media (max-width:800px) and (min-width:768px){
+	.menu_area .navbar-nav li a {
+	  padding: 35px 6px;
+	  font-size:12px;
+	}
+	.topFixedMenu .navbar-nav li a {
+	  font-size: 12px;
+	  padding: 20px 6px;
+	}
+	.section_title h2 {
+	  font-size: 21px;
+	}
+	.section_title p {
+	  font-size: 13px;
+	}
+	.features_right h2 {
+	  font-size: 26px;
+	}
+	.features_right ul li p {
+		font-size: 14px;
+		line-height: 24px;
+		margin-left: 7px;
+		margin-top: 0;
+		width: 213px;
+	}
+	.features_left img {
+	  margin: 173px 0 0 0;
+	}
+	.features_right div a {
+	  font-size: 16px;
+	  padding: 10px 17px;
+	}
+	.about_area .results_section .left_results h2 {
+	  font-size: 17px;
+	}
+	.single_team div:first-child {
+	  min-height: 236px;
+	}
+	.price h2 {
+	  font-size: 36px;
+	}
+	.featuredprice h2 {
+	  font-size: 43px;
+	}
+	.btn-absor {
+	  font-size: 16px;
+	  padding: 7px 19px;
+	}
+	.why_skyes_two_column_left div h2, .why_skyes_two_column_right div h2 {
+	  font-size: 20px;
+	}
+	.why_skyes_two_column_left .accordion_area .panel-default .panel-heading a {
+	  font-size: 14px;
+	}
+	.why_skyes_two_column_right .tab_area .tab_menu li a {
+	  font-size: 10px;
+	  padding: 15px 3px;
+	}
+	
+	.twitter_area .twitter_slider .single_slide h2 {
+	  font-size: 29px;
+	}
+	.twitter_area .twitter_slider .single_slide > a {
+	  padding: 15px 40px;
+	}
+	.blog_area .blog_post .single_blog_post h2 {
+	  font-size: 13px;
+	}
+	.why_choose_area .why_choose_content ul li {
+	  width: 220px;
+	}
+	.why_choose_area .why_choose_content ul li h2 a {
+	  font-size: 12px;
+	}
+	.counter_icon_area .counter_icon .single_counter_item h2 {
+	  font-size: 30px;
+	}
+	.counter_icon_area .counter_icon .single_counter_item a {
+	  font-size: 19px;
+	}
+	.contact_area .contact .contact_left .social_contact a {
+	  font-size: 34px;
+	}
+}
+@media(max-width:992px) and (min-width:768px){
+	#sequence .backgroundImage {
+	  -moz-transform: scaleX(2);
+	  -webkit-transform: scaleX(2);
+	  -o-transform: scaleX(2);
+	  -ms-transform: scaleX(2);
+	  transform: scaleX(2);
+	}
+}
+@media (width:1024px){
+	.topFixedMenu .navbar-brand.logo {
+	  padding-top: 16px !important;
+	}
+}
+@media (max-width:1024px) and (min-width:920px){
+	.menu_area .navbar-nav li a {
+	  font-size: 13px;
+	  padding: 35px 9px;
+	}
+	.main_slider .slides li .title {
+	  font-size: 32px;
+	}
+	.features_right ul li p {
+	  width: 285px;
+	}
+	.why_skyes_two_column_left .accordion_area .panel-default .panel-heading a {
+	  font-size: 14px;
+	}
+	.why_skyes_two_column_right .tab_area .tab_menu li a {
+	 font-size:14px;
+	}
+	.why_choose_area .why_choose_content ul li {
+	  width: 320px;
+	}
+	.counter_icon_area .counter_icon .single_counter_item h2 {
+	  font-size: 36px;
+	}
+}
+@media (max-width:768px){
+	.main_slider .slides li .title {
+	  font-size: 32px;
+	}
+	.sequence-theme {
+	  height: 650px;
+	}
+	#sequence .single_slide div h2 {
+	  font-size: 30px;
+	}
+	#sequence .single_slide div p {
+	  font-size: 14px;
+	}
+	#sequence .single_slide div a {
+	  font-size: 14px;
+	  padding: 13px 9px;
+	}
+	#sequence .single_slide div a + a {
+	  left: 158px;
+	}
+	#sequence .single_slide .mobile_group img + img {
+	  height: 31%;
+	}
+	#sequence .single_slide div {
+	  left: 6%;
+	}
+	#sequence .slide2 div {
+	  left: 50%;
+	}
+	#sequence .single_slide .mobile_group {
+	 left: 6%;
+	}
+	.contact_area .contact .contact_right {
+	  margin-right: 10px;
+	}
+	
+}
+@media (max-width:767px) and (min-width:568px){
+	.portfolio_single_content div a {
+	  margin-top: 53%;
+	}
+	.about_missions .single_about_missions div p {
+	  padding-top: 28%;
+	}
+	.portfolio_menu ul li {
+	  display: block;
+	}
+	.about_area .results_section .left_results {
+	  margin-bottom: 60px;
+	}
+	.about_missions .single_about_missions {
+	  margin-top: 19px;
+	}
+	.single_team_mamber .profile_picture {
+	  text-align: left;
+	}
+	.single_team_mamber .profile_content h2 {
+	  margin-top: 20px;
+	}
+	.blog_area .blog_post .single_blog_post {
+	  margin-bottom: 20px;
+	}
+	.blog_area .blog_post .single_blog_post div p {
+	  padding-top: 43%;
+	}
+	.price-table {
+	  margin-top: 50px;
+	}
+	#sequence .single_slide div a + a {
+	  left: 138px;
+	}
+	.counter_icon_area .counter_icon .single_counter_item h2 {
+	  display: block;
+	}
+	.contact_area .contact .contact_right {
+	  margin: 40px;
+	}
+	.contact_area .contact .contact_left {
+	  margin: 40px;
+	}
+	
+}
+@media (max-width:480px){
+	.navbar-default .navbar-toggle {
+	  border-color: #DDDDDD;
+	  margin: 14px;
+	}
+	.menu_area .navbar-header .navbar-brand {
+	  height: auto;
+	  margin-left: 16px;
+	  margin-top: 6px;
+	  padding: 0;
+	}
+	.why_choose_area .why_choose_content .why_choose_left ul li:nth-child(odd){ 
+		text-align: left;
+	}
+	.why_choose_area .why_choose_content .why_choose_right ul li:nth-child(2n+1) {
+	  margin: 0 5px 19px 0;
+	  padding: 0;
+	  text-align: left;
+	  width: 100%;
+	}
+	.section_title h2 {
+	  color: #26354A;
+	  font-size: 26px;
+	  font-weight: 800;
+	  margin: 0;
+	  padding: 0;
+	  text-align: center;
+	  text-transform: uppercase;
+	}
+	.portfolio_menu ul li {
+	  display: block;
+	}
+	.portfolio_single_content div a {
+	  margin-top: 47%;
+	}
+	.about_area .results_section .right_results a img {
+	  margin: 30px 0;
+	}
+	.about_missions .single_about_missions {
+		margin-top: 30px;
+	}
+	.about_missions .single_about_missions div p {
+		padding-top: 23%;
+	}
+	.single_team {
+	  margin-top: 288px;
+	}
+	.blog_area .blog_post .single_blog_post div p {
+	  padding-top: 40%;
+	}
+	.blog_area .blog_post .single_blog_post {
+	  margin-top: 30px;
+	}
+	.blog_area .all_post_link {
+	  text-align: left;
+	}
+	.price-table {
+	  margin-bottom: 100px;
+	}
+	.why_choose_area .why_choose_content .why_choose_left {
+	  text-align: left;
+	}
+	.why_choose_area .why_choose_content .why_choose_left ul li {
+	  float: left;
+	}
+	.why_choose_area .why_choose_content .why_choose_left ul li:nth-child(odd) {
+	  margin: 0 0 0 5px;
+	  padding: 0;
+	  text-align: left;
+	  width: 118px;
+	}
+	.why_choose_area .why_choose_content ul li div {
+	  margin-bottom: 15px;
+	}
+	.counter_icon_area .counter_icon .single_counter_item h2 {
+	  display: block;
+	  font-size: 40px;
+	  max-width:309px;
+	}
+	.counter_icon_area {
+	  margin: 15px 0;
+	}
+	.contact_area .contact .contact_right form div {
+	  margin: 15px;
+	}
+	.sequence-theme {
+	  height: 416px;
+	}
+	#sequence .single_slide div a {
+	  font-size: 12px;
+	  padding: 8px 5px;
+	  margin-top: -87px;
+	}
+	.features_right div a {
+		padding: 13px 30px;
+	}
+	.about_missions .single_about_missions div p {
+	  padding-top: 25%;
+	}
+	#sequence .single_slide div a + a {
+	  left: 114px;
+	}
+	#sequence .animate-in .slide2 div p {
+	  display: none;
+	}
+	#sequence .single_slide div h2 {
+	  font-size: 22px;
+	  margin-top: 69px;
+	}
+	#sequence .single_slide div h6 {
+	  margin: 39px 0 0 0;
+	}
+	#sequence .single_slide div p {
+		display:none;
+	}
+	.sequence-next, .sequence-prev {
+	  height: 45px;
+	  width: 19px;
+	}
+}
+@media (max-width:320px){
+
+	.main_slider .flex-control-paging li{
+		color: #FFFFFF;
+		margin: 0;
+		padding: 0;
+		position: relative;
+		float:left;
+		top: 0;
+		left: 40%;
+		z-index: 1;
+	}
+
+	.menu_area .navbar-nav li a {
+	  padding: 10px 11px;
+	}
+	.header_inner {
+		height: 481px;
+		padding-top: 145px;
+	}
+	.main_slider .slides li .title {
+		color: #FFF;
+		font-family: 'Lato',sans-serif;
+		font-size: 18px;
+		font-weight: 700;
+		margin: 0;
+		padding: 0;
+		text-align: center;
+		text-transform: uppercase;
+	}
+	.main_slider .slides li .subtitle {
+		color: #FFF;
+		font-family: 'Lato',sans-serif;
+		font-size: 13px;
+		font-weight: normal;
+		margin: 0;
+		padding: 0;
+		text-align: center;
+		text-transform: uppercase;
+	}
+	.slider_readmore {
+		margin: 7px auto 0;
+	}
+	.section_title h2 {
+		font-size: 20px;
+	}
+	.portfolio_menu ul li {
+	  display: block;
+	}
+	.features_right h2 {
+	  color: #26354A;
+	  font-size: 23px;
+	  font-weight: 800;
+	  margin: 50px 0 0 0;
+	  padding: 0;
+	  text-align: center;
+	  text-transform: uppercase;
+	}
+	.features_right ul li p {
+	  margin-left: 0;
+	}
+	.features_right div {
+	  text-align: center;
+	}
+	.features_right div a {
+	  margin-top: 10px;
+	  min-width: 250px;
+	}
+	.features_right div a:last-child {
+	  margin-left:0;
+	}
+	.about_area .results_section .left_results h2 {
+	  font-size: 14px;
+	}
+	.about_area .results_section .left_results a {
+	  display: block;
+	  float: none;
+	  font-size: 18px;
+	  margin: 30px auto;
+	  width: 208px;
+	}
+	.about_missions .single_about_missions {
+	  margin-bottom: 30px;
+	}
+	.single_team {
+	  margin: 30px 0 0 0;
+	}
+	.why_skyes_two_column_left div h2, .why_skyes_two_column_right div h2 {
+	  font-size: 25px;
+	}
+	.blog_area .blog_post .single_blog_post {
+	  margin-bottom: 30px;
+	}
+	.blog_area .all_post_link {
+	  padding: 10px 0 0;
+	  text-align: left;
+	}
+	.price-table {
+	  margin-bottom: 121px;
+	  border: 1px solid #D9DEE1 !important;
+	}
+	.pricehover.featured {
+	  margin-bottom: 34px;
+	}
+	.why_choose_area .why_choose_content .why_choose_left ul li {
+	  float: none;
+	  width: 100%;
+	  display: block;
+	  text-align: left;
+	  margin:10px 0;
+	}
+	.counter_icon_area .counter_icon .single_counter_item {
+	  margin-top: 30px;
+	  text-align: center;
+	}
+	.counter_icon_area .counter_icon .single_counter_item h2 {
+	  display: block;
+	}
+	.contact_area .contact .contact_left .social_contact a {
+	  font-size: 33px;
+	}
+	.contact_area .contact .contact_right {
+	  float: none;
+	  margin: 32px 10px;
+	  padding: 0;
+	}
+	.sequence-theme {
+	  height: 278px;
+	}
+	#sequence .single_slide div h2 {
+	  font-size: 16px;
+	  margin-top: 69px;
+	}
+	#sequence .single_slide div h6 {
+	  font-size: 13px;
+	}
+	#sequence .single_slide div a + a {
+	  display: none;
+	}
+	.why_skyes_two_column_left .accordion_area .panel-default .panel-heading a {
+	  font-size: 13px !important;
+	}
+	.portfolio_single_content div a {
+	  margin-top: 43%;
+	}
+	
+	
+}

@@ -1,10 +1,722 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-    <h1>Hello world!</h1>
-</body>
+	<head>
+		<meta charset="utf-8"/>
+		<!--
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		-->
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<title>Painter Studio - Bootstrap theme</title>
+        {% load static from staticfiles %}
+		<link rel="stylesheet" type="text/css" href="{% static 'resources/css/font-awesome/css/font-awesome.css' %}">
+		<link type="text/css" href="{% static 'resources/css/uikit.min.css' %}" rel="stylesheet"/>
+		<link type="text/css" href="{% static 'resources/css/bootstrap.min.css' %}" rel="stylesheet"/>
+		<link type="text/css" href="{% static 'resources/css/bootstrap-theme.min.css' %}" rel="stylesheet"/>
+		<link href="{% static 'resources/css/jquery.bxslider.css' %}" rel="stylesheet" />
+		<link type="text/css" href="{% static 'resources/css/sequencejs-theme.css' %}" rel="stylesheet"/>
+		<link type="text/css" href="{% static 'resources/fonts/style.css' %}" rel="stylesheet"/>
+		<link type="text/css" href="{% static 'resources/css/preViews.css' %}" rel="stylesheet"/>
+		<link id="themeColorChangeLink" type="text/css" href="{% static 'resources/css/color/blue/style.css' %}" rel="stylesheet"/>
+		<link type="text/css" href="{% static 'resources/css/responsive.css' %}" rel="stylesheet"/>
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div id="preloader"></div>
+		<header id="home" data-src="{% static 'resources/images/bx_loader.gif' %}" class="header_area">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<div class="header_inner">
+							<div class="main_slider">
+								<ul class="slides">
+									<li class="flex-active-slide">
+										<h2 class="title">Painter Studio - responsive</h2>
+										<h4 class="subtitle">This bootstrap theme is fully responsive</h4>
+									</li>
+									<li>
+										<h2 class="title">Painter Studio - Bootstrap</h2>
+										<h4 class="subtitle">Using one of the best frameworks</h4>
+									</li>
+									<li>
+										<h2 class="title">Painter Studio - Unique</h2>
+										<h4 class="subtitle">Unique & clean design to fit your taste</h4>
+									</li>
+								</ul>
+							</div>
+							<div class="clear"></div>
+							<a href="{%url 'index' %}" class="slider_readmore">Read more</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<section class="main_menu_outer">
+			<div role="navigation" class="navbar navbar-default menu_area">
+				<div class="container">
+					<div class="navbar-header">
+						<button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a href="{%url 'index' %}#" class="navbar-brand logo"><img src="{% static 'resources/images/logo.png' %}"></a>
+					</div>
+					<div class="navbar-collapse collapse">
+						<ul id="nav" class="nav navbar-nav navbar-right">
+							<li class="active"><a href="{%url 'index' %}#home">Home</a></li>
+							<li><a href="{%url 'index' %}#aboutus">About</a></li>
+							<li><a href="{%url 'index' %}#features">Features</a></li>
+							<li><a href="{%url 'index' %}#portfolios">Portfolio</a></li>
+							<li><a href="{%url 'index' %}#prices">Prices</a></li>
+							<li><a href="{%url 'index' %}#ourTeam">Team</a></li>
+							<li><a href="{%url 'index' %}#testimonial">Testimonials</a></li>
+							<li><a href="{%url 'index' %}#news">News</a></li>
+							<li><a href="{%url 'index' %}#contact">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="aboutus" class="area_padding about_area">
+			<div class="container">
+				<div class="about">
+					<div class="section_title" data-uk-scrollspy="{cls:'uk-animation-slide-bottom', repeat: false,delay:0}">
+						<h2>ABOUT US</h2>
+						<p>In pulvinar neque mollis, gravida justo eu, volutpat sem. Aliquam vel leo est. Donec at odio condimentum, bibendum mauris<br/> sit amet Morbi mollis nibh et nibh elementum, eget fermentum enim ultrices</p>
+					</div>
+					<div class="row results_section">
+						<div class="col-xm-12 col-sm-6 col-md-6 col-lg-6">
+							<div class="left_results" data-uk-scrollspy="{cls:'uk-animation-slide-left', repeat: false,delay:0}">
+								<a href="{%url 'index' %}" ><img src="{% static 'resources/images/imac.png' %}" alt=""/></a>
+							</div>
+						</div>
+						<div class="col-xm-12 col-sm-6 col-md-6 col-lg-6">
+							<div class="right_results" data-uk-scrollspy="{cls:'uk-animation-slide-right', repeat: false,delay:0}">
+								<h2>Hi, we are Painter Studio</h2>
+								<p>and we are a group of professional painters. Our work has started from 2001 when we sold my first painting to one foreigner at extremely low price. He recommended us to continue painting.</p>
+								<p><b>We can</b></p>
+								<ul>
+									<li><span>&#59234;</span>Draw high quality paintings</li>
+									<li><span>&#59234;</span>Finish work in less than 2 weeks</li>
+									<li><span>&#59234;</span>Make your painting available online</li>
+									<li><span>&#59234;</span>Have paintings stored in Cloud</li>
+									<li><span>&#59234;</span>Do daily backup for paintings</li>
+									<li><span>&#59234;</span>Deliver paintings in place for FREE</li>
+									<li><span>&#59234;</span>Recommend you as a loyal and professional customer</li>
+									<li><span>&#59234;</span>And much more!</li>
+								</ul>
+								<p>You can contact me anytime to make order of your paintings by selecting pricing order or by clicking button below</p>
+								<a href="{%url 'index' %}#contact" class="btn btn-default">Get started now</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="features" class="area_padding landing_page_area">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<div class="landing_page">
+							<div class="section_title" data-uk-scrollspy="{cls:'uk-animation-slide-bottom', repeat: false,delay:0}">
+								<h2 id="fly-it">FEATURES THAT MAKE US ONE OF THE BEST</h2>
+								<p>In pulvinar neque mollis, gravida justo eu, volutpat sem. Aliquam vel leo est. Donec at odio condimentum, bibendum mauris<br/> sit amet Morbi mollis nibh et nibh elementum, eget fermentum enim ultrices</p>
+							</div>
+							<div class="landing_page_slider">
+								<div class="landing_page_slider_container">
+									<ul class="slides">
+										<li>
+											<div class="single_landing_page_content">
+												<div>
+													<span class="fa fa-adjust"></span>
+												</div>
+												<h3>Adjustment</h3>
+												<p>Donec at odio condimentum, bibendum mauris sit ame mollis nibh et nibh elementum</p>
+											</div>
+										</li>
+										<li>
+											<div class="single_landing_page_content">
+												<div>
+													<span class="fa fa-rocket"></span>
+												</div>
+												<h3>Instant startup</h3>
+												<p>Donec at odio condimentum, bibendum mauris sit ame mollis nibh et nibh elementum</p>
+											</div>
+										</li>
+										<li>
+											<div class="single_landing_page_content">
+												<div>
+													<span class="fa fa-paint-brush"></span>
+												</div>
+												<h3>Professional painters</h3>
+												<p>Donec at odio condimentum, bibendum mauris sit ame mollis nibh et nibh elementum</p>
+											</div>
+										</li>
+										<li>
+											<div class="single_landing_page_content">
+												<div>
+													<span class="fa fa-cloud"></span>
+												</div>
+												<h3>Paintings stored in Cloud</h3>
+												<p>Donec at odio condimentum, bibendum mauris sit ame mollis nibh et nibh elementum</p>
+											</div>
+										</li>
+										<li>
+											<div class="single_landing_page_content">
+												<div>
+													<span class="fa fa-laptop"></span>
+												</div>
+												<h3>Fir for any device</h3>
+												<p>Donec at odio condimentum, bibendum mauris sit ame mollis nibh et nibh elementum</p>
+											</div>
+										</li>
+										<li>
+											<div class="single_landing_page_content">
+												<div>
+													<span class="fa fa-comments"></span>
+												</div>
+												<h3>24/7 Support</h3>
+												<p>Donec at odio condimentum, bibendum mauris sit ame mollis nibh et nibh elementum</p>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="area_padding portfolio_area" id="portfolios">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="portfolio">
+							<div class="section_title" data-uk-scrollspy="{cls:'uk-animation-slide-bottom', repeat: false,delay:0}">
+								<h2>PORTFOLIO</h2>
+								<p>In pulvinar neque mollis, gravida justo eu, volutpat sem. Aliquam vel leo est. Donec at odio condimentum, bibendum mauris<br/> sit amet Morbi mollis nibh et nibh elementum, eget fermentum enim ultrices</p>
+							</div>
+							<div class="portfoloi_content_area" >
+								<div class="portfolio_menu" id="filters">
+									<ul>
+										<li class="active_prot_menu"><a href="{%url 'index' %}#porfolio_menu" data-filter="*">ALL</a></li>
+										<li><a href="{%url 'index' %}#porfolio_menu" data-filter=".cloud">CLOUD</a></li>
+										<li><a href="{%url 'index' %}#porfolio_menu" data-filter=".professional" >PROFESSIONAL</a></li>
+										<li><a href="{%url 'index' %}#porfolio_menu" data-filter=".pencil">PENCIL</a></li>
+										<li><a href="{%url 'index' %}#porfolio_menu" data-filter=".brush">BRUSH</a></li>
+									</ul>
+								</div>
+								<div class="portfolio_content">
+									<div class="row"  id="portfolio">
+										<div class="col-xs-12 col-sm-4 col-md-3 col-lg-3 cloud">
+											<div class="portfolio_single_content" data-uk-scrollspy="{cls:'uk-animation-scale-up'}">
+												<img src="{% static 'resources/images/portfolio/p1.jpg' %}" alt="title"/>
+												<div>
+													<a href="{%url 'index' %}#">Lorem ipsum dolor</a>
+													<span>Sit amet</span>
+												</div>
+											</div>
+										</div>
+										<div class="col-xs-12 col-sm-4 col-md-3 col-lg-3 professional">
+											<div class="portfolio_single_content" data-uk-scrollspy="{cls:'uk-animation-scale-down'}">
+												<img src="{% static 'resources/images/portfolio/p2.jpg' %}" alt="title"/>
+												<div>
+													<a href="{%url 'index' %}#">Lorem ipsum dolor</a>
+													<span>Sit amet</span>
+												</div>
+											</div>
+										</div>
+										<div class="col-xs-12 col-sm-4 col-md-3 col-lg-3 pencil">
+											<div class="portfolio_single_content" data-uk-scrollspy="{cls:'uk-animation-scale-up'}">
+												<img src="{% static 'resources/images/portfolio/p3.jpg' %}" alt="title"/>
+												<div>
+													<a href="{%url 'index' %}#">Lorem ipsum dolor</a>
+													<span>Sit amet</span>
+												</div>
+											</div>
+										</div>
+										<div class="col-xs-12 col-sm-4 col-md-3 col-lg-3 brush">
+											<div class="portfolio_single_content" data-uk-scrollspy="{cls:'uk-animation-scale-down'}">
+												<img src="{% static 'resources/images/portfolio/p4.jpg' %}" alt="title"/>
+												<div>
+													<a href="{%url 'index' %}#">Lorem ipsum dolor</a>
+													<span>Sit amet</span>
+												</div>
+											</div>
+										</div>
+										<div class="col-xs-12 col-sm-4 col-md-3 col-lg-3 pencil cloud">
+											<div class="portfolio_single_content" data-uk-scrollspy="{cls:'uk-animation-scale-up'}">
+												<img src="{% static 'resources/images/portfolio/p5.jpg' %}" alt="title"/>
+												<div>
+													<a href="{%url 'index' %}#">Lorem ipsum dolor</a>
+													<span>Sit amet</span>
+												</div>
+											</div>
+										</div>
+										<div class="col-xs-12 col-sm-4 col-md-3 col-lg-3 brush professional">
+											<div class="portfolio_single_content" data-uk-scrollspy="{cls:'uk-animation-scale-down'}">
+												<img src="{% static 'resources/images/portfolio/p6.jpg' %}" alt="title"/>
+												<div>
+													<a href="{%url 'index' %}#">Lorem ipsum dolor</a>
+													<span>Sit amet</span>
+												</div>
+											</div>
+										</div>
+										<div class="col-xs-12 col-sm-4 col-md-3 col-lg-3 professional pencil">
+											<div class="portfolio_single_content" data-uk-scrollspy="{cls:'uk-animation-scale-up'}">
+												<img src="{% static 'resources/images/portfolio/p7.jpg' %}" alt="title"/>
+												<div>
+													<a href="{%url 'index' %}#">Lorem ipsum dolor</a>
+													<span>Sit amet</span>
+												</div>
+											</div>
+										</div>
+										<div class="col-xs-12 col-sm-4 col-md-3 col-lg-3 cloud">
+											<div class="portfolio_single_content" data-uk-scrollspy="{cls:'uk-animation-scale-down'}">
+												<img src="{% static 'resources/images/portfolio/p8.jpg' %}" alt="title"/>
+												<div>
+													<a href="{%url 'index' %}#">Lorem ipsum dolor</a>
+													<span>Sit amet</span>
+												</div>
+											</div>
+										</div>
+										<div class="col-xs-12 col-sm-4 col-md-3 col-lg-3 brush pencil">
+											<div class="portfolio_single_content" data-uk-scrollspy="{cls:'uk-animation-scale-up'}">
+												<img src="{% static 'resources/images/portfolio/p9.jpg' %}" alt="title"/>
+												<div>
+													<a href="{%url 'index' %}#">Lorem ipsum dolor</a>
+													<span>Sit amet</span>
+												</div>
+											</div>
+										</div>
+										<div class="col-xs-12 col-sm-4 col-md-3 col-lg-3 cloud brush">
+											<div class="portfolio_single_content" data-uk-scrollspy="{cls:'uk-animation-scale-down'}">
+												<img src="{% static 'resources/images/portfolio/p10.jpg' %}" alt="title"/>
+												<div>
+													<a href="{%url 'index' %}#">Lorem ipsum dolor</a>
+													<span>Sit amet</span>
+												</div>
+											</div>
+										</div>
+										<div class="col-xs-12 col-sm-4 col-md-3 col-lg-3 professional cloud">
+											<div class="portfolio_single_content" data-uk-scrollspy="{cls:'uk-animation-scale-up'}">
+												<img src="{% static 'resources/images/portfolio/p11.jpg' %}" alt="title"/>
+												<div>
+													<a href="{%url 'index' %}#">Lorem ipsum dolor</a>
+													<span>Sit amet</span>
+												</div>
+											</div>
+										</div>
+										<div class="col-xs-12 col-sm-4 col-md-3 col-lg-3 professional pencil">
+											<div class="portfolio_single_content" data-uk-scrollspy="{cls:'uk-animation-scale-down'}">
+												<img src="{% static 'resources/images/portfolio/p12.jpg' %}" alt="title"/>
+												<div>
+													<a href="{%url 'index' %}#">Lorem ipsum dolor</a>
+													<span>Sit amet</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="prices" class="area_padding price_table_area">
+			<div class="container">
+				<div class="section_title" data-uk-scrollspy="{cls:'uk-animation-slide-bottom', repeat: false,delay:0}">
+					<h2>PRICING</h2>
+					<p>In pulvinar neque mollis, gravida justo eu, volutpat sem. Aliquam vel leo est. Donec at odio condimentum, bibendum mauris sit amet bMorbi mollis nibh et nibh elementum, eget fermentum enim ultrices</p>
+				</div>
+				<section class="price_table_area four_column">
+					<div class="pricing-page" data-uk-scrollspy="{cls:'uk-animation-slide-bottom', repeat: false,delay:0}">
+						<div class="row">
+							<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+								<div class="price-table pricehover">
+									<div class="price">
+										<h2>Starter</h2>
+										<h3>10<span>$</span><label>Once</label></h3>
+									</div>
+									<ul class="unstyled pricing animated fadeIn ">
+										<li>1 painting</li>
+										<li>No Backup</li>
+										<li>No Cloud</li>
+										<li>Support by Email</li>
+									</ul>
+									<button class="btn-absor">Order</button>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+								<div class="price-table pricehover featured">
+									<div class="featuredprice">
+										<h2>Business</h2>
+										<h3>80<span>$</span><label >Year</label></h3>
+									</div>
+									<ul class="unstyled pricing animated fadeIn">
+										<li>10 paintings</li>
+										<li>Backups every year</li>
+										<li>Cloud support</li>
+										<li>24/7 Support</li>
+									</ul>
+									<button class="btn-absor">Order</button>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+								<div class=" price-table pricehover">
+									<div class="price">
+										<h2>Enerprise</h2>
+										<h3>100<span>$</span><label>Month</label></h3>
+									</div>
+									<ul class="unstyled pricing animated fadeIn">
+										<li>Unlimited paintings</li>
+										<li>Cloud everyday</li>
+										<li>Backups everyday</li>
+										<li>Support by email</li>
+									</ul>
+									<button class="btn-absor">Order</button>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+								<div class=" price-table pricehover border_left_none">
+									<div class="price">
+										<h2>Painter</h2>
+										<h3>200<span>$</span><label>Lifetime</label></h3>
+									</div>
+									<ul class="unstyled pricing animated fadeIn">
+										<li>100 paintings</li>
+										<li>Cloud everyday</li>
+										<li>Backups everyday</li>
+										<li>24/7 support</li>
+									</ul>
+									<button class="btn-absor">Order</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</section>
+
+		<section id="ourTeam" class="area_padding team_area">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<div class="team">
+							<div class="section_title" data-uk-scrollspy="{cls:'uk-animation-slide-bottom', repeat: false,delay:0}">
+								<h2>MEET THE TEAM</h2>
+								<p>In pulvinar neque mollis, gravida justo eu, volutpat sem. Aliquam vel leo est. Donec at odio condimentum, bibendum mauris<br/> sit amet Morbi mollis nibh et nibh elementum, eget fermentum enim ultrices</p>
+							</div>
+							<div class="row team_box">
+								<div class="col-xs12 col-sm-3 col-md-3 col-lg-3">
+									<div class="single_team" data-uk-scrollspy="{cls:'uk-animation-slide-left', repeat: false}">
+										<div>
+											<a href="{%url 'index' %}#single_team_mamber_back" class="team_menu" data-teamShow="team_1"><img src="{% static 'resources/images/team1.jpg' %}" alt="Team Member"/></a>
+										</div>
+										<div>
+											<h2>John Doe</h2>
+											<p>Founder & CEO</p>
+										</div>
+										<div>
+											<a href="{%url 'index' %}#" class="fa fa-facebook"></a>
+											<a href="{%url 'index' %}#" class="fa fa-twitter"></a>
+											<a href="{%url 'index' %}#" class="fa fa-pinterest"></a>
+											<a href="{%url 'index' %}#" class="fa fa-googleplus"></a>
+											<a href="{%url 'index' %}#" class="fa fa-instagram"></a>
+										</div>
+									</div>
+								</div>
+								<div class="col-xs12 col-sm-3 col-md-3 col-lg-3">
+									<div class="single_team" data-uk-scrollspy="{cls:'uk-animation-slide-bottom', repeat: false,delay:200}">
+										<div>
+											<a href="{%url 'index' %}#single_team_mamber_back" class="team_menu" data-teamShow="team_2"><img src="{% static 'resources/images/team2.jpg' %}" alt="Team Member"/></a>
+										</div>
+										<div>
+											<h2>Magda Fisher</h2>
+											<p>Painter and Artist</p>
+										</div>
+										<div>
+											<a href="{%url 'index' %}#" class="fa fa-facebook"></a>
+											<a href="{%url 'index' %}#" class="fa fa-twitter"></a>
+											<a href="{%url 'index' %}#" class="fa fa-pinterest"></a>
+											<a href="{%url 'index' %}#" class="fa fa-googleplus"></a>
+											<a href="{%url 'index' %}#" class="fa fa-instagram"></a>
+										</div>
+									</div>
+								</div>
+								<div class="col-xs12 col-sm-3 col-md-3 col-lg-3">
+									<div class="single_team" data-uk-scrollspy="{cls:'uk-animation-slide-bottom', repeat: false, delay:300}">
+										<div>
+											<a href="{%url 'index' %}#single_team_mamber_back" class="team_menu" data-teamShow="team_3"><img src="{% static 'resources/images/team3.jpg' %}" alt="Team Member"/></a>
+										</div>
+										<div>
+											<h2>John Harrison</h2>
+											<p>Junior Painter</p>
+										</div>
+										<div>
+											<a href="{%url 'index' %}#" class="fa fa-facebook"></a>
+											<a href="{%url 'index' %}#" class="fa fa-twitter"></a>
+											<a href="{%url 'index' %}#" class="fa fa-pinterest"></a>
+											<a href="{%url 'index' %}#" class="fa fa-googleplus"></a>
+											<a href="{%url 'index' %}#" class="fa fa-instagram"></a>
+										</div>
+									</div>
+								</div>
+								<div class="col-xs12 col-sm-3 col-md-3 col-lg-3">
+									<div class="single_team" data-uk-scrollspy="{cls:'uk-animation-slide-right', repeat: false}">
+										<div>
+											<a href="{%url 'index' %}#single_team_mamber_back" class="team_menu" data-teamShow="team_4"><img src="{% static 'resources/images/team4.jpg' %}" alt="Team Member"/></a>
+										</div>
+										<div>
+											<h2>Jessica Bristol</h2>
+											<p>Support</p>
+										</div>
+										<div>
+											<a href="{%url 'index' %}#" class="fa fa-facebook"></a>
+											<a href="{%url 'index' %}#" class="fa fa-twitter"></a>
+											<a href="{%url 'index' %}#" class="fa fa-pinterest"></a>
+											<a href="{%url 'index' %}#" class="fa fa-googleplus"></a>
+											<a href="{%url 'index' %}#" class="fa fa-instagram"></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="testimonial" class="area_padding twitter_area">
+			<div class="container">
+				<div class="white_secion_title" data-uk-scrollspy="{cls:'uk-animation-slide-bottom', repeat: false,delay:0}">
+					<h2>TESTIMONIALS</h2>
+					<p>In pulvinar neque mollis, gravida justo eu, volutpat sem. Aliquam vel leo est. Donec at odio condimentum, bibendum mauris<br/> sit amet Morbi mollis nibh et nibh elementum, eget fermentum enim ultrices</p>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<div class="twitter">
+							<div class="twitter_slider">
+								<ul class="slides">
+									<li>
+										<div class="single_slide">
+											<img class="img-circle" src="{% static 'resources/images/twitter.png' %}" alt="name"/>
+											<h2>John Doe</h2>
+											<p>
+												Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque varius
+												ac mi ut dapibus. Cras dui dolor, ultrices in orci suscipit, varius ullamcorper
+												metus. Vivamus ut mi ut ipsum tristique tempus vel non augue. Nullam enim risus,
+												aliquam tempus nulla quis, fermentum venenatis sapien. Proin nec purus facilisis,
+												tincidunt mauris nec, rhoncus elit. Mauris vestibulum risus nec velit finibus, eu
+												bibendum purus pretium. Nullam ullamcorper ornare est eu tincidunt. Fusce placerat
+												imperdiet elit vitae malesuada. Curabitur ut gravida lectus. Integer quis venenatis tellus.
+											</p>
+										</div>
+									</li>
+									<li>
+										<div class="single_slide">
+											<img class="img-circle" src="{% static 'resources/images/twitter1.png' %}" alt="name"/>
+											<h2>Julia Doe</h2>
+											<p>
+												Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque varius
+												ac mi ut dapibus. Cras dui dolor, ultrices in orci suscipit, varius ullamcorper
+												metus. Vivamus ut mi ut ipsum tristique tempus vel non augue. Nullam enim risus,
+												aliquam tempus nulla quis, fermentum venenatis sapien. Proin nec purus facilisis,
+												tincidunt mauris nec, rhoncus elit. Mauris vestibulum risus nec velit finibus, eu
+												bibendum purus pretium. Nullam ullamcorper ornare est eu tincidunt. Fusce placerat
+												imperdiet elit vitae malesuada. Curabitur ut gravida lectus. Integer quis venenatis tellus.
+											</p>
+										</div>
+									</li>
+									<li>
+										<div class="single_slide">
+											<img class="img-circle" src="{% static 'resources/images/twitter2.png' %}" alt="name"/>
+											<h2>Jack Doe</h2>
+											<p>
+												Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque varius
+												ac mi ut dapibus. Cras dui dolor, ultrices in orci suscipit, varius ullamcorper
+												metus. Vivamus ut mi ut ipsum tristique tempus vel non augue. Nullam enim risus,
+												aliquam tempus nulla quis, fermentum venenatis sapien. Proin nec purus facilisis,
+												tincidunt mauris nec, rhoncus elit. Mauris vestibulum risus nec velit finibus, eu
+												bibendum purus pretium. Nullam ullamcorper ornare est eu tincidunt. Fusce placerat
+												imperdiet elit vitae malesuada. Curabitur ut gravida lectus. Integer quis venenatis tellus.
+											</p>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="news" class="area_padding blog_area">
+			<div class="container">
+				<div class="blog">
+					<div class="section_title" data-uk-scrollspy="{cls:'uk-animation-slide-bottom', repeat: false,delay:0}">
+						<h2>NEWS</h2>
+						<p>In pulvinar neque mollis, gravida justo eu, volutpat sem. Aliquam vel leo est. Donec at odio condimentum, bibendum mauris<br/> sit ametMorbi mollis nibh et nibh elementum, eget fermentum enim ultrices</p>
+					</div>
+					<div class="blog_post" data-uk-scrollspy="{cls:'uk-animation-slide-bottom', repeat: false,delay:0}">
+						<div class="row">
+							<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+								<div class="single_blog_post">
+									<div>
+										<img src="{% static 'resources/images/blog1.jpg' %}" alt="" />
+										<p><a href="{%url 'index' %}#">18 <span>Jul</span></a></p>
+									</div>
+									<h2>New painting software released!</h2>
+									<p>In pulvinar neque mollis, gravida justo eu, volutpat sem. Aliquam vel leo est. Donec at odio condimentum, bibendum mauris sit amet bMorbi mollis nibh et nibh elementum, eget fermentum enim ultrices</p>
+									<a href="{%url 'index' %}#" class="btn btn-default">Read More</a>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+								<div class="single_blog_post">
+									<div>
+										<img src="{% static 'resources/images/blog2.jpg' %}" alt="" />
+										<p><a href="{%url 'index' %}#">18 <span>Jul</span></a></p>
+									</div>
+									<h2>Promises to be the best!</h2>
+									<p>In pulvinar neque mollis, gravida justo eu, volutpat sem. Aliquam vel leo est. Donec at odio condimentum, bibendum mauris sit amet bMorbi mollis nibh et nibh elementum, eget fermentum enim ultrices</p>
+									<a href="{%url 'index' %}#" class="btn btn-default">Read More</a>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+								<div class="single_blog_post">
+									<div>
+										<img src="{% static 'resources/images/blog3.jpg' %}" alt="" />
+										<p><a href="{%url 'index' %}#">18 <span>Jul</span></a></p>
+									</div>
+									<h2>Da vinci secrets unveiled</h2>
+									<p>In pulvinar neque mollis, gravida justo eu, volutpat sem. Aliquam vel leo est. Donec at odio condimentum, bibendum mauris sit amet bMorbi mollis nibh et nibh elementum, eget fermentum enim ultrices</p>
+									<a href="{%url 'index' %}#" class="btn btn-default">Read More</a>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+								<div class="single_blog_post">
+									<div>
+										<img src="{% static 'resources/images/blog4.jpg' %}" alt="" />
+										<p><a href="{%url 'index' %}#">18 <span>Jul</span></a></p>
+									</div>
+									<h2>Latest masterpiece paintings</h2>
+									<p>In pulvinar neque mollis, gravida justo eu, volutpat sem. Aliquam vel leo est. Donec at odio condimentum, bibendum mauris sit amet bMorbi mollis nibh et nibh elementum, eget fermentum enim ultrices</p>
+									<a href="{%url 'index' %}#" class="btn btn-default">Read More</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+		<section id="contact" class="area_padding contact_area">
+
+			<div class="container">
+				<div class="contact">
+					<div class="row">
+						<div class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
+							<div class="contact_left" data-uk-scrollspy="{cls:'uk-animation-slide-left'}">
+
+						<h2>CONTACT US</h2>
+						<p>In pulvinar neque mollis, gravida justo eu, volutpat sem. Aliquam vel leo est. </p>
+
+								<div>
+									<h2>Contact Email</h2>
+									<p>painter@gridgum.com</p>
+								</div>
+								<div>
+									<h2>Our Address</h2>
+									<p>Brooklyn 123 NY</p>
+								</div>
+								<div>
+									<h2>Phone Number</h2>
+									<p>+1 234 5678</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xs-offset-0 col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
+							<div class="contact_right" data-uk-scrollspy="{cls:'uk-animation-slide-right'}">
+								<form class="form-horizontal" action="{%url 'index' %}#" method="post" role="form">
+									<div class="form-group  has-feedback">
+										<input type="text" class="form-control" placeholder="Your Name" id="name" name="name"/>
+										<span class="form-control-feedback">&#128100;</span>
+									</div>
+									<div class="form-group  has-feedback">
+										<input type="text" class="form-control" placeholder="Your Email" id="email" name="email"/>
+										<span class="form-control-feedback">&#9993;</span>
+									</div>
+									<div class="form-group  has-feedback">
+										<textarea class="form-control" id="message" placeholder="Message" name="message"></textarea>
+									</div>
+									<div class="form-group  has-feedback">
+										<input type="button" name="form_submit" id="formSubmit" class="btn" value="SEND"/>
+									</div>
+									<div class="mail_message"></div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer  class="area_padding footer_area">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<div class="footer" data-uk-scrollspy="{cls:'uk-animation-slide-bottom'}">
+							<h3>Copyright &copy; Cecilia Arts 2018</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+        {% load staticfiles %}
+		<script type="text/javascript" src="{% static 'resources/js/jquery.js' %}"></script>
+		<script type="text/javascript" src="{% static 'resources/js/uikit.min.js' %}"></script>
+		<script type="text/javascript" src="{% static 'resources/js/jquery.easing.1.3.js' %}"></script>
+		<script type="text/javascript" src="{% static 'resources/js/jquery.nav.js' %}"></script>
+		<script type="text/javascript" src="{% static 'resources/js/jquery.fitvids.js' %}"></script>
+		<script type="text/javascript" src="{% static 'resources/js/bootstrap.min.js' %}"></script>
+		<script src="{% static 'resources/js/jquery.flexslider-min.js' %}"></script>
+		<script src="{% static 'resources/js/jquery.bxslider.min.js' %}"></script>
+		<script src="{% static 'resources/js/isotope.pkgd.min.js' %}"></script>
+		<script src="{% static 'resources/js/jquery.sequence-min.js' %}"></script>
+		<script src="{% static 'resources/js/sequencejs-options.js' %}"></script>
+		<script type="text/javascript" src="{% static 'resources/js/jquery.retina.js' %}"></script>
+		<script type="text/javascript" src="{% static 'resources/js/main.js' %}"></script>
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARtSxnZ7mGTVHdIpurS_H64cr2b4CilfA&amp;sensor=false&amp;callback=initialize"></script>
+		<script type="text/javascript">
+		  function initialize() {
+			 var myLocation = new google.maps.LatLng(-12.037087, -77.044104);
+			var mapOptions = {
+			  center: myLocation,
+			  zoom: 16,
+			  scrollwheel: true
+			};
+			var map = new google.maps.Map(document.getElementById("map-canvas"),mapOptions);
+			var iconUrl = 'images/mapicon.png';
+			var marker = new google.maps.Marker({
+				position: myLocation,
+				map: map,
+				icon: iconUrl,
+				title:"Painter Theme",
+				draggable:false,
+				animation: google.maps.Animation.DROP
+			});
+		  }
+		  google.maps.event.addDomListener(window, 'load', initialize);
+		</script>
+	</body>
 </html>
