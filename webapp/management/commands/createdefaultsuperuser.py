@@ -9,5 +9,9 @@ class Command(BaseCommand):
 
     def handle(self, *args, **options):
         """Create default super user."""
-        if not User.objects.get(username='root'):
-            User.objects.create_superuser('root', 'root@admin.com', 'root')
+        if not User.objects.filter(username='root').first():
+            user = User.objects.create_superuser('root', 'root@admin.com', 'root')
+            print("Default super user created:", user.username)
+
+        else:
+            print("Default super user already exists")
