@@ -1,0 +1,7 @@
+Hi {{ recipient_name }},
+
+{{ message }}
+
+Kind regards,
+
+{{ sender_name }}

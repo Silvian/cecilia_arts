@@ -167,6 +167,17 @@ CELERY_TIMEZONE = 'Europe/London'
 CELERY_RESULT_BACKEND = 'django-db'
 
 
+# SMTP settings
+# Note that these settings are environment specific
+
+EMAIL_HOST = ''
+EMAIL_PORT = ''
+EMAIL_HOST_USER = ''
+EMAIL_HOST_PASSWORD = ''
+EMAIL_USE_TLS = True
+EMAIL_USE_SSL = False
+
+
 # Load local environment specific settings
 try:
     from local_settings import *
