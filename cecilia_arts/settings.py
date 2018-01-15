@@ -155,8 +155,8 @@ STATIC_URL = '/static/'
 # Celery Configurations
 # Celery & Broker settings
 
-CELERY_BROKER_URL = "amqp://localhost:5672"
-CELERY_RESULTS_BACKEND = "amqp://localhost:5672"
+CELERY_BROKER_URL = "amqp://admin:mypass@rabbitmq"
+CELERY_RESULTS_BACKEND = "amqp://admin:mypass@rabbitmq"
 
 CELERY_ACCEPT_CONTENT = ['application/json']
 CELERY_RESULT_SERIALIZER = 'json'

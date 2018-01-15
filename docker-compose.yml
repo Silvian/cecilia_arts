@@ -31,7 +31,7 @@ services:
   celery_beat:
     build: .
     env_file: .env
-    command: dockerize -wait tcp://postgres:5432 -wait tcp://rabbitmq:5672 -timeout 60s celery -A cecilia_arts beat --pidfile= --loglevel DEBUG
+    command: dockerize -wait tcp://postgres:5432 -wait tcp://rabbitmq:5672 -timeout 60s celery -A cecilia_arts beat --max-interval=10 --pidfile= --loglevel DEBUG
     volumes:
       - .:/usr/src/app
     depends_on:
