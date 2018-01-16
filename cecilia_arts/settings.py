@@ -170,12 +170,18 @@ CELERY_RESULT_BACKEND = 'django-db'
 # SMTP settings
 # Note that these settings are environment specific
 
-EMAIL_HOST = ''
-EMAIL_PORT = ''
-EMAIL_HOST_USER = ''
-EMAIL_HOST_PASSWORD = ''
-EMAIL_USE_TLS = True
+EMAIL_HOST = os.getenv('EMAIL_HOST')
+EMAIL_PORT = os.getenv('EMAIL_PORT')
+EMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD')
+EMAIL_USE_TLS = False
 EMAIL_USE_SSL = False
+
+# Default email configurations
+EMAIL_RECIPIENT_NAME = os.getenv('EMAIL_RECIPIENT_NAME')
+EMAIL_RECIPIENT_EMAIL = os.getenv('EMAIL_RECIPIENT_EMAIL')
+EMAIL_SUBJECT = os.getenv('EMAIL_SUBJECT')
+EMAIL_SIGNATURE = os.getenv('EMAIL_SIGNATURE')
 
 
 # Load local environment specific settings

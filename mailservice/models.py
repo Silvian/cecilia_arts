@@ -48,15 +48,22 @@ class Email(models.Model):
     sender_email = models.EmailField(max_length=500)
     message = models.TextField()
 
-    def save(self, *args, **kwargs):
-        """Override the save model to send email task."""
+    def send_email_task(self):
+        """Send email task."""
         send_email.delay(
             sender_name=self.name,
             sender_email=self.sender_email,
             message=self.message,
         )
 
+    def save(self, *args, **kwargs):
+        """Override the save model to send email task."""
+        self.send_email_task()
         super(Email, self).save(*args, **kwargs)
+
+    def publish(self):
+        """Call save method."""
+        self.save()
 
     def __str__(self):
         return self.sender_email

@@ -1,9 +1,9 @@
 """webapp views"""
 
-from django.shortcuts import render
+from django.views.generic import TemplateView
 
 
-def index_view(request):
+class HomeView(TemplateView):
     """Render index view."""
-    return render(request, "webapp/index.html")
 
+    template_name = "webapp/index.html"

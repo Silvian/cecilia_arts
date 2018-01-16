@@ -9,3 +9,5 @@ python manage.py showmigrations
 # load default data
 echo "Creating default user..."
 python manage.py createdefaultsuperuser
+echo "Creating default email configurations..."
+python manage.py createmailconfig

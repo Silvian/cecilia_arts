@@ -2,8 +2,8 @@
 
 from django.urls import path
 
-from webapp import views
+from webapp.views import HomeView
 
 urlpatterns = [
-    path('', views.index_view, name="index"),
+    path('', HomeView.as_view(), name="index"),
 ]

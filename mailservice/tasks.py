@@ -13,14 +13,15 @@ def send_email(sender_name, sender_email, message):
     from mailservice.models import EmailConfiguration
     email_settings = EmailConfiguration.load()
 
-    logger.info("Sending email to: {}".format(email_settings.recipient_name))
-    if not MailService.send_email(
-            sender_email=sender_email,
-            sender_name=sender_name,
-            recipient_name=email_settings.recipient_name,
-            recipient_email=email_settings.recipient_email,
-            subject=email_settings.subject,
-            message=message):
-        logger.warn(
-            "Failed to send email to the following recipient: {}".format(
-                email_settings.recipient_email))
+    if email_settings.send_emails:
+        logger.info("Sending email to: {}".format(email_settings.recipient_name))
+        if not MailService.send_email(
+                sender_email=sender_email,
+                sender_name=sender_name,
+                recipient_name=email_settings.recipient_name,
+                recipient_email=email_settings.recipient_email,
+                subject=email_settings.subject,
+                message=message):
+            logger.warn(
+                "Failed to send email to the following recipient: {}".format(
+                    email_settings.recipient_email))

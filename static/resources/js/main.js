@@ -76,7 +76,7 @@ jQuery(document).ready(function(){
 		});
 		$('#formSubmit').click(function(){
 			var error = false;
-			if(emailValidation('email') == false){
+			if(emailValidation('sender_email') == false){
 				error = true;
 			}
 			if(textBoxValidation('name') == false)
@@ -89,13 +89,19 @@ jQuery(document).ready(function(){
 			}
 			else
 			{
-				var uname = $('#name').val();
-				var uemail = $('#email').val();
-				var umessage = $('#message').val();
+				var name = $('#name').val();
+				var sender_email = $('#sender_email').val();
+				var message = $('#message').val();
+
 				$.ajax({
 				type: "POST",
-				url: "mailto.php",
-				data: { uname: uname, uemail: uemail, umessage: umessage }
+				url: "/mailservice/sendEmail/",
+				data: {
+                        name: name,
+				        sender_email: sender_email,
+				        message: message,
+				        csrfmiddlewaretoken: getCookie('csrftoken')
+				    }
 				}).done(function( msg ) {
 					$('.mail_message').css({"display":"block"});
 					$('.mail_message').html(msg);
@@ -239,4 +245,22 @@ function themeColorShow(){
 		jQuery('.preViewsMenu_area').addClass('visibleTrue');
 	}
 	
+}
+
+/* Used to retrieve cookies*/
+function getCookie(name) {
+    var cookieValue = null;
+    if (document.cookie && document.cookie != '') {
+        var cookies = document.cookie.split(';');
+        for (var i = 0; i < cookies.length; i++) {
+            var cookie = jQuery.trim(cookies[i]);
+            // Does this cookie string begin with the name we want?
+            if (cookie.substring(0, name.length + 1) == (name + '=')) {
+                cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                break;
+            }
+        }
+    }
+
+    return cookieValue;
 }
