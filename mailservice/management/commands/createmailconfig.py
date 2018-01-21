@@ -5,7 +5,9 @@ from mailservice.models import EmailConfiguration
 
 
 class Command(BaseCommand):
-    help = 'Create default email configurations.'
+    """Create default email configurations."""
+
+    help = __doc__
 
     def handle(self, *args, **options):
         """Create default email configurations."""
